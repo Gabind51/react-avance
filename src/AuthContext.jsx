@@ -9,6 +9,8 @@ export const AuthProvider = ({ children }) => {
     setIsAuthenticated((prevAuth) => !prevAuth);
   };
 
+  console.log(isAuthenticated)
+
   return (
     <AuthContext.Provider value={{ isAuthenticated, toggleAuth }}>
       {children}
