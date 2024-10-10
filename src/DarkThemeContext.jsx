@@ -13,5 +13,3 @@ export const DarkThemeProvider = ({ children }) => {
     {children}
   </DarkThemeContext.Provider>
 };
-
-export const ThemeContext = createContext();

@@ -1,16 +1,16 @@
-import { useContext } from "react"
+import { useContext } from "react";
+import { DarkThemeContext } from "../DarkThemeContext";
 
-import { DarkThemeContext } from "../DarkThemeContext"
-import './Body.css'
+import "./Body.css";
 
 export default function Body() {
-    const {darkTheme, toggleDarkTheme} = useContext(DarkThemeContext)
+  const { darkTheme, toggleDarkTheme } = useContext(DarkThemeContext);
 
-    return (
-        <div className={`container ${darkTheme ? 'dark' : ''}`}>
-            <button className='darkThemeButton' onClick={toggleDarkTheme}>
-                {darkTheme ? 'Activer le mode clair' : 'Activer le mode sombre'}
-            </button>
-        </div>
-    )
+  return (
+    <div className={`container ${darkTheme ? "dark" : ""}`}>
+      <button className="darkThemeButton" onClick={toggleDarkTheme}>
+        {darkTheme ? "Activer le mode clair" : "Activer le mode sombre"}
+      </button>
+    </div>
+  );
 }
